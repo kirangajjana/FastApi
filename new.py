@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 app=FastAPI()
 
-@app.get("/")
-async def first_api():
-    return {"message": "hello kiran gajjana"}
+data=[{"name":"kiran gajjana","college":"nit sikkim","city":"hyderabad"}]
+@app.get("/data")
+def data():
+    return data
 
