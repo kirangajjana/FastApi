@@ -8,5 +8,14 @@ def data(bookdata):
     for i in data1:
          if i.get("name").casefold()==bookdata.casefold():
               return i
+@app.get("/data/")
+async def cato(city: str):
+     data=[]
+     for i in data1:
+          if i.get("city").casefold()==city.casefold():
+               data.append(i)
+     return data    
+               
+
 
 
