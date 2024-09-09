@@ -18,10 +18,10 @@ async def cato(city: str):
           if i.get("city").casefold()==city.casefold():
                data.append(i)
      return data    
-               
+#post request method               
 @app.post("/data/create_data")
 async def create_data(new_data=Body()):
      data1.append(new_data)
-     
+ #put request method    
 
 
