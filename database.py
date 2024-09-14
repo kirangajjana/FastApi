@@ -1,1 +1,1 @@
-databse=".sqlite///: add"
+databse=".sqlite///: add:"
